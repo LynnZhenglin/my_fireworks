@@ -16,7 +16,7 @@
             position: relative;
         }
 
-        #font_a {
+        /* #font_a {
             position: absolute;
             left: 15%;
             top: 14vw;
@@ -56,7 +56,6 @@
             font-family: Helvetica Neue;
             font-weight: 350;
             text-align: justify;
-            /* width: 28vw; */
             color: #363A70;
         }
 
@@ -68,7 +67,7 @@
             font-family: Helvetica Neue;
             font-weight: 350;
             color: #363A70;
-        }
+        } */
 
         #background1 {
             width: 100%;
@@ -703,11 +702,11 @@
         <div id="back" style="top:0;left:0%;">
             <img src="./image/main.png" style="width:100%">
         </div>
-        <div id="font_a">My Fireworks</div>
-        <div id="font_b">A Better Viewing Experience at SSTM</div>
-        <div id="font_c">Group Work</div>
-        <div id="font_e">- Service & UX Designer & Visual Communication Designer</div>
-        <div id="font_d">2021.08 — ongoing</div>
+        <div id="font_a" style="opacity: 0">My Fireworks</div>
+        <div id="font_b" style="opacity: 0">A Better Viewing Experience at SSTM</div>
+        <div id="font_c" style="opacity: 0">Group Work</div>
+        <div id="font_e" style="opacity: 0">- Service & UX Designer & Visual Communication Designer</div>
+        <div id="font_d" style="opacity: 0">2021.08 — ongoing</div>
     </div>
 
     <div id="background1">
@@ -1143,6 +1142,129 @@
         document.getElementById("pageUlLi16").onmousedown = function () {
             toPage(16);
         }
+
+        var tar1 = {
+            position: "absolute",
+            left: "15%",
+            top: "14vw",
+            "font-size": "2.5vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "600",
+            color: "#363A70",
+            opacity: 1
+        };
+
+        $("#font_a").css({
+            position: "absolute",
+            left: "8%",
+            top: "14vw",
+            "font-size": "2.5vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "600",
+            color: "#363A70",
+            opacity: 0
+        });
+
+        var tar2 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "17.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#363A70",
+            opacity: 1
+        };
+
+        $("#font_b").css({
+            position: "absolute",
+            left: "8%",
+            top: "17.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#363A70",
+            opacity: 0
+        });
+
+        var tar3 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "22.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#363A70",
+            opacity: 1
+        };
+
+        $("#font_c").css({
+            position: "absolute",
+            left: "15.15%",
+            top: "25vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#363A70",
+            opacity: 0
+        });
+
+        var tar5 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "24.2vw",
+            "font-size": "1.1vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#363A70",
+            opacity: 1
+        };
+
+        $("#font_e").css({
+            position: "absolute",
+            left: "15.15%",
+            top: "26.7vw",
+            "font-size": "1.1vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#363A70",
+            opacity: 0
+        });
+
+        var tar4 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "26.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#363A70",
+            opacity: 1
+        };
+
+        $("#font_d").css({
+            position: "absolute",
+            left: "15.15%",
+            top: "29vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#363A70",
+            opacity: 0
+        });
+        // sleep(0.5);
+        setTimeout(function () {
+            $("#font_a").animate(tar1, 1500, "linear");
+
+            $("#font_b").animate(tar2, 1500, "linear");
+
+            $("#font_c").animate(tar3, 1500, "linear");
+
+            $("#font_e").animate(tar5, 1500, "linear");
+
+            $("#font_d").animate(tar4, 1500, "linear");
+        }, 1000);
+
     </script>
 
 </body>
